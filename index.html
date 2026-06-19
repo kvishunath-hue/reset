@@ -4,405 +4,318 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Health Plan — V. Kothapalli</title>
+<title>16-Week Metabolic Reset</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bg:#f5f6f3; --card:#ffffff; --ink:#1f262d; --muted:#69737c; --faint:#9aa3ab;
-    --line:#e8eae4; --line2:#eef0ea;
-    --accent:#1c9e8a; --accent-d:#147a6a; --accent-soft:#e7f5f2;
-    --red:#cf5440; --amber:#c0871d; --green:#2c9a66; --blue:#2f74b8; --violet:#7a5fc0;
-    --shadow:0 1px 2px rgba(20,30,40,.05), 0 4px 14px rgba(20,30,40,.04);
-  }
-  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
-  html{scroll-behavior:smooth;}
-  body{margin:0;background:var(--bg);color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;
-    font-size:15.5px;line-height:1.55;-webkit-font-smoothing:antialiased;}
-  .wrap{max-width:780px;margin:0 auto;padding:0 16px 80px;}
-  a{color:var(--accent-d);}
-
-  /* hero */
-  .hero{padding:30px 4px 8px;}
-  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-d);}
-  h1{margin:6px 0 2px;font-size:30px;letter-spacing:-.025em;font-weight:800;line-height:1.1;}
-  .who{color:var(--muted);font-size:13.5px;}
-  .bottomline{margin:16px 0 4px;background:var(--card);border:1px solid var(--line);
-    border-radius:16px;padding:16px 18px;box-shadow:var(--shadow);font-size:15px;}
-  .bottomline b{color:var(--accent-d);}
-  .levers{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0 4px;}
-  @media(max-width:600px){.levers{grid-template-columns:repeat(2,1fr);}}
-  .lever{background:var(--accent-soft);border:1px solid #cfeae4;border-radius:13px;padding:11px 12px;text-align:center;}
-  .lever .ic{font-size:19px;}
-  .lever .tx{font-size:12.5px;font-weight:700;color:var(--accent-d);margin-top:2px;line-height:1.25;}
-
-  /* sticky nav */
-  nav{position:sticky;top:0;z-index:30;margin:18px -16px 0;padding:9px 16px;
-    background:rgba(245,246,243,.86);backdrop-filter:saturate(180%) blur(10px);
-    border-bottom:1px solid var(--line);display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;}
-  nav::-webkit-scrollbar{display:none;}
-  nav a{flex:0 0 auto;font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;
-    padding:6px 12px;border-radius:999px;border:1px solid transparent;white-space:nowrap;transition:.15s;}
-  nav a.on{color:var(--accent-d);background:var(--card);border-color:var(--line);box-shadow:var(--shadow);}
-
-  section{padding-top:26px;scroll-margin-top:60px;}
-  .sec-h{display:flex;align-items:center;gap:10px;margin:0 0 12px;}
-  .sec-h .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:0 0 auto;}
-  .sec-h h2{margin:0;font-size:20px;font-weight:750;letter-spacing:-.02em;}
-  .sec-h .sub{color:var(--faint);font-size:13px;margin-left:auto;}
-  h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:18px 0 7px;font-weight:700;}
-
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 17px;margin:10px 0;box-shadow:var(--shadow);}
-  .card.pad0{padding:4px 17px;}
-  ul{margin:7px 0;padding-left:20px;} li{margin:6px 0;}
-  b,strong{font-weight:700;color:#161d24;}
-  .muted{color:var(--muted);} .faint{color:var(--faint);font-size:13px;}
-
-  .pill{display:inline-block;font-size:10.5px;font-weight:800;padding:2px 9px;border-radius:999px;vertical-align:middle;letter-spacing:.02em;}
-  .p-red{background:#fbe9e5;color:#b8442f;} .p-amber{background:#f8efdb;color:#9a6c12;}
-  .p-green{background:#e3f4ea;color:#1f7a4d;} .p-blue{background:#e5eef8;color:#2861a0;} .p-violet{background:#efe9fa;color:#6249a8;}
-
-  table{width:100%;border-collapse:collapse;margin:4px 0;font-size:14px;}
-  th,td{text-align:left;padding:9px 6px;border-bottom:1px solid var(--line2);vertical-align:top;}
-  th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;}
-  tr:last-child td{border-bottom:none;}
-  td.k{color:var(--ink);font-weight:700;white-space:nowrap;}
-
-  /* stat tiles */
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;}
-  @media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr);}}
-  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 13px;box-shadow:var(--shadow);}
-  .stat .v{font-size:19px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.02em;}
-  .stat .l{font-size:11.5px;color:var(--muted);margin-top:2px;line-height:1.25;}
-
-  /* root map */
-  .band{border-radius:14px;padding:11px 13px;margin:8px 0;border:1px solid;}
-  .band .lab{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px;}
-  .b-root{background:#fbecea;border-color:#f3d4cd;} .b-root .lab{color:#b8442f;}
-  .b-cas {background:#f8f1de;border-color:#ecdfbd;} .b-cas .lab{color:#9a6c12;}
-  .b-fix {background:#e6f5ec;border-color:#cce9d6;} .b-fix .lab{color:#1f7a4d;}
-  .chips{display:flex;flex-wrap:wrap;gap:7px;}
-  .chip{background:rgba(255,255,255,.7);border:1px solid rgba(0,0,0,.06);border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:600;}
-  .chip b{display:inline;}
-  .flowarrow{text-align:center;color:var(--faint);font-size:15px;letter-spacing:.3em;margin:2px 0;}
-
-  /* checklist */
-  .prog{display:flex;align-items:center;gap:12px;margin:2px 0 10px;}
-  .prog .bar{flex:1;height:9px;background:#e9ebe5;border-radius:999px;overflow:hidden;}
-  .prog .bar > i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),#43c2ae);transition:width .35s;}
-  .prog .n{font-size:13px;font-weight:700;color:var(--accent-d);white-space:nowrap;}
-  .reset{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:6px 12px;font-size:12.5px;color:var(--muted);cursor:pointer;box-shadow:var(--shadow);}
-  .chk{display:flex;align-items:flex-start;gap:12px;padding:11px 2px;border-bottom:1px solid var(--line2);cursor:pointer;}
-  .chk:last-child{border-bottom:none;}
-  .cbox{flex:0 0 23px;height:23px;border:2px solid #cdd4d9;border-radius:7px;margin-top:1px;display:flex;align-items:center;justify-content:center;background:#fff;transition:.12s;}
-  .chk.done .cbox{background:var(--accent);border-color:var(--accent);}
-  .cbox svg{width:14px;height:14px;opacity:0;transition:.12s;}
-  .chk.done .cbox svg{opacity:1;}
-  .chk .t{flex:1;font-size:14.5px;}
-  .chk .t small{display:block;color:var(--muted);font-size:12px;margin-top:1px;}
-  .chk.done .t{color:var(--faint);text-decoration:line-through;}
-  .chk.done .t small{text-decoration:none;color:var(--faint);}
-  .chk .w{flex:0 0 auto;font-size:10px;font-weight:800;color:var(--muted);background:#f0f2ec;padding:3px 8px;border-radius:999px;margin-top:2px;text-transform:uppercase;letter-spacing:.03em;}
-
-  footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);color:var(--faint);font-size:11.5px;text-align:center;}
-  .tag{font-size:11px;font-weight:800;color:var(--accent-d);}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'JetBrains Mono',monospace;background:#0a0a0a;color:#e0e0e0;min-height:100vh;padding:20px;max-width:720px;margin:0 auto}
+.header{padding-bottom:16px;margin-bottom:22px;border-bottom:2px solid var(--pc,#1abc9c)}
+.header-label{font-size:11px;letter-spacing:4px;text-transform:uppercase;margin-bottom:6px;color:var(--pc,#1abc9c)}
+.header-title{font-size:30px;font-weight:900;color:#fff;line-height:1.05}
+.header-sub{font-size:12px;color:#888;margin-top:6px;line-height:1.5}
+.truth{background:#101814;border:1px solid #1d2c26;border-left:3px solid #1abc9c;border-radius:4px;padding:12px 14px;margin:14px 0 22px;font-size:12px;color:#bfe8dd;line-height:1.6}
+.truth b{color:#1abc9c}
+.tabs{display:flex;gap:4px;margin-bottom:20px;overflow-x:auto;padding-bottom:4px}
+.tab{background:#1a1a1a;color:#888;border:1px solid #333;padding:8px 12px;border-radius:4px;cursor:pointer;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;white-space:nowrap;font-family:inherit;transition:all .2s}
+.tab.active{color:#fff}
+.phase-header{background:#111;padding:16px;border-radius:4px;margin-bottom:18px;border-left:4px solid var(--pc)}
+.phase-title{font-size:18px;font-weight:800;color:#fff}
+.phase-sub{font-size:12px;margin-top:4px;color:var(--pc)}
+.section{background:#111;border:1px solid #222;border-radius:4px;margin-bottom:8px;overflow:hidden}
+.section-btn{width:100%;background:transparent;border:none;color:#fff;padding:12px 16px;font-size:13px;font-weight:700;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:inherit}
+.section-btn:hover{background:#1a1a1a}
+.section-content{padding:0 16px 14px;display:none}
+.section.open .section-content{display:block}
+.item{font-size:12px;line-height:1.65;color:#bbb;padding:4px 0 4px 14px;position:relative}
+.item::before{content:'';position:absolute;left:-3px;top:11px;width:6px;height:6px;border-radius:50%;background:var(--pc)}
+.item b{color:#eee}
+.panel{background:#111;border:1px solid #222;border-radius:4px;padding:16px;margin-top:16px}
+.panel-title{font-size:13px;font-weight:700;color:#fff;margin-bottom:12px}
+.wk-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;min-width:520px}
+.wk{background:#1a1a1a;border-radius:4px;padding:7px 3px;text-align:center;border-top:3px solid #333}
+.wk-n{font-size:9px;color:#666;font-weight:700}
+.wk-kg{font-size:11px;color:#fff;font-weight:800;margin-top:3px}
+.wk-d{font-size:8px;margin-top:2px}
+.tpl{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;min-width:500px}
+.tpl-d{background:#1a1a1a;border-radius:4px;padding:8px 4px;text-align:center;border-top:3px solid #333}
+.tpl-day{font-size:10px;color:#666;font-weight:700}
+.tpl-w{font-size:9px;margin-top:4px;line-height:1.3;color:#ccc}
+.progress-bar{display:flex;align-items:center;width:100%}
+.progress-point{flex:1;text-align:center}
+.progress-line{height:4px}
+.progress-dot{width:12px;height:12px;border-radius:50%;margin:-8px auto 0;border:2px solid transparent}
+.progress-kg{font-size:11px;font-weight:700;margin-top:6px}
+.progress-bf{font-size:9px}
+.box{border-radius:4px;padding:16px;margin-top:16px}
+.box-title{font-size:13px;font-weight:700;margin-bottom:10px}
+.box-row{font-size:11px;padding:4px 0 4px 12px;border-left:2px solid;margin-bottom:3px;line-height:1.55}
+.ev{background:#0a1410;border:1px solid rgba(26,188,156,.22)}.ev .box-title{color:#1abc9c}.ev .box-row{color:#9fd8c9;border-color:rgba(26,188,156,.3)}
+.rules{background:#1a0a0a;border:1px solid rgba(231,76,60,.22)}.rules .box-title{color:#e74c3c}.rules .box-row{color:#cc8888;border-color:rgba(231,76,60,.3)}
+.med{background:#13101a;border:1px solid rgba(155,89,182,.25)}.med .box-title{color:#b07cd6}.med .box-row{color:#c3aede;border-color:rgba(155,89,182,.3)}
+.surg{background:#0a121a;border:1px solid rgba(52,152,219,.25)}.surg .box-title{color:#3498db}.surg .box-row{color:#9cc4e6;border-color:rgba(52,152,219,.3)}
+.track{background:#0a0a1a;border:1px solid rgba(41,128,185,.2);border-radius:4px;padding:16px;margin-top:16px}
+.track-title{font-size:13px;font-weight:700;color:#2980b9;margin-bottom:8px}
+.track-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.track-card{background:#111;padding:10px;border-radius:4px}
+.track-f{font-size:10px;color:#2980b9;font-weight:700;letter-spacing:1px}
+.track-d{font-size:10px;color:#999;margin-top:4px;line-height:1.4}
+.equip{background:#0a1a0a;border:1px solid rgba(39,174,96,.2);border-radius:4px;padding:16px;margin-top:16px}
+.equip-title{font-size:13px;font-weight:700;color:#27ae60;margin-bottom:8px}
+.equip-item{font-size:11px;padding:3px 0;display:flex;gap:8px}
+.have{color:#66bb6a}.need{color:#ffb74d}
+.legend{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:4px}
+.legend-dot{width:8px;height:8px;border-radius:2px}
+.legend-label{font-size:9px;color:#666}
+.footer{font-size:9px;color:#444;text-align:center;padding:16px 0 4px;border-top:1px solid #1a1a1a;margin-top:22px;line-height:1.6}
+@media(max-width:500px){.track-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <div class="hero">
-    <div class="eyebrow">Health Plan</div>
-    <h1>The Truth Map</h1>
-    <div class="who">Vishwanath Kothapalli · 34M · updated 18 Jun 2026</div>
-    <div class="bottomline">It's <b>one connected system</b> — insulin resistance, late sleep / likely OSA, and smoking drive nearly everything else. Fix the roots and the cascade reverses. You're <b>early and reversible</b>.</div>
-    <div class="levers">
-      <div class="lever"><div class="ic">⚖️</div><div class="tx">Lose 10–12 kg</div></div>
-      <div class="lever"><div class="ic">🚭</div><div class="tx">Quit smoking</div></div>
-      <div class="lever"><div class="ic">😴</div><div class="tx">Fix sleep + OSA</div></div>
-      <div class="lever"><div class="ic">💊</div><div class="tx">Correct deficiencies</div></div>
-    </div>
-  </div>
+<div class="header" id="header">
+  <div class="header-label" id="hl">16-Week Metabolic Reset · v2 (post-checkup)</div>
+  <div class="header-title">103 kg → 88 kg</div>
+  <div class="header-sub">~32% → ~22% body fat · Vishwanath · 34M · Huzurabad · 16 weeks · reverse the fatty liver + insulin resistance</div>
+</div>
 
-  <nav id="nav">
-    <a href="#overview" class="on">Overview</a>
-    <a href="#daily">Daily</a>
-    <a href="#diet">Diet</a>
-    <a href="#stack">Stack</a>
-    <a href="#move">Exercise</a>
-    <a href="#sleep">Sleep</a>
-    <a href="#tests">Tests</a>
-  </nav>
+<div class="truth">
+  <b>The one lever:</b> a sustained calorie deficit drives the 15 kg — verified evidence shows exercise alone gives only ~0.05–1 kg. Training builds fitness + saves muscle; <b>diet does the weight.</b> And <b>&gt;10% loss reverses your fatty liver</b> (~90% NASH resolution). Deficit first, everything else amplifies it.
+</div>
 
-  <!-- OVERVIEW -->
-  <section id="overview">
-    <div class="sec-h"><span class="dot"></span><h2>Overview</h2></div>
+<div class="tabs" id="tabs"></div>
+<div id="phaseHeader" class="phase-header"></div>
+<div id="sections"></div>
 
-    <h3>Baseline numbers</h3>
-    <div class="stats">
-      <div class="stat"><div class="v">6.7 <span class="pill p-red">HIGH</span></div><div class="l">HOMA-IR · insulin resistance</div></div>
-      <div class="stat"><div class="v">140/93 <span class="pill p-red">HIGH</span></div><div class="l">Blood pressure</div></div>
-      <div class="stat"><div class="v">28 <span class="pill p-red">LOW</span></div><div class="l">HDL cholesterol</div></div>
-      <div class="stat"><div class="v">189 <span class="pill p-amber">HIGH</span></div><div class="l">Triglycerides</div></div>
-      <div class="stat"><div class="v">16.3 <span class="pill p-red">DEF.</span></div><div class="l">Vitamin D</div></div>
-      <div class="stat"><div class="v">14.7 <span class="pill p-red">LOW</span></div><div class="l">Ferritin · iron</div></div>
-      <div class="stat"><div class="v">Gr II</div><div class="l">Fatty liver (NAFLD)</div></div>
-      <div class="stat"><div class="v">5.7% <span class="pill p-green">sugar OK</span></div><div class="l">HbA1c · fast 97 · PPBS 123</div></div>
-    </div>
+<div class="panel">
+  <div class="panel-title">Weekly weight targets (~1 kg/week)</div>
+  <div style="overflow-x:auto"><div class="wk-grid" id="wkGrid"></div></div>
+</div>
 
-    <h3>The root-cause map</h3>
-    <div class="band b-root"><div class="lab">Roots — fix these</div>
-      <div class="chips"><span class="chip">Insulin resistance · HOMA-IR 6.7</span><span class="chip">Sleep · late nights + likely OSA</span><span class="chip">Smoking</span></div>
-    </div>
-    <div class="flowarrow">▼ drives ▼</div>
-    <div class="band b-cas"><div class="lab">The cascade</div>
-      <div class="chips"><span class="chip">Fatty liver II</span><span class="chip">HDL 28 · TG 189</span><span class="chip">BP 140/93</span><span class="chip">Prediabetes (early)</span><span class="chip">Low mood / energy</span><span class="chip">Low-normal testosterone</span></div>
-    </div>
-    <div class="flowarrow">▲ reversed by ▲</div>
-    <div class="band b-fix"><div class="lab">Master levers</div>
-      <div class="chips"><span class="chip">Lose 10–12 kg</span><span class="chip">Quit smoking</span><span class="chip">Fix sleep + treat OSA</span><span class="chip">Correct deficiencies</span></div>
-    </div>
+<div class="panel">
+  <div class="panel-title">Training week — template</div>
+  <div style="overflow-x:auto"><div class="tpl" id="tpl"></div></div>
+  <div class="legend" id="tplLegend"></div>
+</div>
 
-    <h3>Already normal (reassuring)</h3>
-    <div class="card pad0"><ul>
-      <li>Heart — echo EF 63%, ECG, stress test: <b>no ischemia</b></li>
-      <li>Kidneys · thyroid · bones (DEXA) · lungs · prostate — normal</li>
-      <li>Cancer markers · Hepatitis B/C · HIV — clear</li>
-      <li><b>Not diabetic</b> — glucose still controlled; the reversible window is open</li>
-    </ul></div>
-  </section>
+<div class="panel">
+  <div class="panel-title">Projected timeline</div>
+  <div class="progress-bar" id="progressBar"></div>
+</div>
 
-  <!-- DAILY -->
-  <section id="daily">
-    <div class="sec-h"><span class="dot" style="background:var(--blue)"></span><h2>Daily Plan</h2></div>
+<div class="box ev">
+  <div class="box-title">✓ Evidence base — what's proven (deep-research, adversarially verified)</div>
+  <div id="evContent"></div>
+</div>
 
-    <h3>Today's check-off</h3>
-    <div class="prog">
-      <div class="bar"><i id="pbar"></i></div>
-      <span class="n" id="pcount">0 / 0</span>
-      <button class="reset" onclick="resetDay()">Reset</button>
-    </div>
-    <div class="card pad0" id="checklist"></div>
-    <p class="faint">Saves on this device · auto-resets each morning. ★ = alternate-day / weekly — skip on off-days.</p>
+<div class="box med">
+  <div class="box-title">💊 Medicines & supplements — the honest landscape</div>
+  <div id="medContent"></div>
+</div>
 
-    <h3>Timetable</h3>
-    <div class="card pad0"><table>
-      <tr><th>When</th><th>Take</th></tr>
-      <tr><td class="k">Wake</td><td>Nicotine patch · Aripiprazole 1.25 · <b>Famocid 40</b> (30 min pre-breakfast) · black coffee (away from iron)</td></tr>
-      <tr><td class="k">Mid-AM ★</td><td><b>Iron</b> + vitamin C — alt days, empty stomach; away from tea/coffee/dairy &amp; ~2 h from Famocid</td></tr>
-      <tr><td class="k">Breakfast</td><td>Omega-3 #1 · probiotic (optional)</td></tr>
-      <tr><td class="k">Lunch</td><td>Omega-3 #2 · <b>Vitamin D 60K</b> (once a week only)</td></tr>
-      <tr><td class="k">Pre-dinner</td><td>Psyllium in water (≥2 h from any meds/iron)</td></tr>
-      <tr><td class="k">Dinner</td><td>Omega-3 #3 · whey (if not post-workout) · <b>Bandy-Plus ×3 nights only</b></td></tr>
-      <tr><td class="k">Night</td><td>Magnesium 1 tab (220 mg) — trial; move to AM if it wakes you</td></tr>
-      <tr><td class="k">SOS</td><td>Clonazepam as needed</td></tr>
-    </table></div>
+<div class="box surg">
+  <div class="box-title">🩹 Septum surgery — prep checklist</div>
+  <div id="surgContent"></div>
+</div>
 
-    <h3>Interaction rules</h3>
-    <div class="card pad0"><ul>
-      <li><b>Iron</b> stays isolated — never with tea/coffee, dairy/calcium, magnesium, psyllium, or right after Famocid.</li>
-      <li><b>Psyllium</b> ≥ 2 h from everything · <b>Vitamin D &amp; omega-3</b> with a fatty meal · <b>magnesium</b> away from iron.</li>
-      <li>🔔 <b>Stop Famocid 2 days before the H. pylori stool test</b> — bridge with Gaviscon.</li>
-    </ul></div>
-  </section>
+<div class="box rules">
+  <div class="box-title">⚠ Non-negotiable rules</div>
+  <div id="rulesContent"></div>
+</div>
 
-  <!-- DIET -->
-  <section id="diet">
-    <div class="sec-h"><span class="dot" style="background:var(--green)"></span><h2>Diet</h2></div>
-    <div class="card pad0"><table>
-      <tr><th>Lever</th><th>Target</th><th>Why</th></tr>
-      <tr><td class="k">Calories</td><td>~2000 kcal</td><td>modest deficit</td></tr>
-      <tr><td class="k">Protein</td><td><b>130–150 g</b></td><td>keep muscle · satiety</td></tr>
-      <tr><td class="k">Carbs</td><td>lower-GI: millets, ragi, legumes, veg · cut sugar/maida/white rice</td><td>insulin · liver</td></tr>
-      <tr><td class="k">Fat</td><td>low saturated · <b>no fried</b> · nuts/olive/omega-3</td><td>fatty liver · lipids</td></tr>
-      <tr><td class="k">Salt</td><td>low</td><td>BP</td></tr>
-      <tr><td class="k">Fiber</td><td>high (psyllium + veg + whole grains)</td><td>lipids · glucose</td></tr>
-      <tr><td class="k">Alcohol</td><td>avoid</td><td>liver · deep sleep</td></tr>
-    </table></div>
+<div class="track">
+  <div class="track-title">📊 Tracking cadence</div>
+  <div class="track-grid" id="trackGrid"></div>
+</div>
 
-    <h3>Sample day · ~2000 kcal / ~140 g protein</h3>
-    <div class="card pad0"><ul>
-      <li><b>Breakfast</b> — 3-egg veg omelette + 2 idli / ragi / oats + curd</li>
-      <li><b>Mid-morning</b> — fruit (guava/apple) + a few nuts</li>
-      <li><b>Lunch</b> — dal + big veg sabzi + 100–150 g chicken/fish/paneer + small millet/brown rice/2 roti + curd + salad</li>
-      <li><b>Post-workout</b> — 1 scoop whey</li>
-      <li><b>Dinner (early, ~3 h before bed)</b> — grilled chicken/fish/paneer/tofu + sautéed veg + small millet/roti</li>
-    </ul></div>
+<div class="equip">
+  <div class="equip-title">🛠 Tools & equipment</div>
+  <div id="equipContent"></div>
+</div>
 
-    <h3>Coffee &amp; reflux</h3>
-    <div class="card pad0"><ul>
-      <li><b>Coffee:</b> black/unsweetened, <b>morning only (before ~2 pm)</b>, away from iron, not right before a BP reading. (Good for fatty liver.)</li>
-      <li><b>Reflux:</b> smaller meals · last meal ~3 h before bed · easy on late spicy/fried/caffeine · sleep on your side, head slightly raised.</li>
-    </ul></div>
-  </section>
-
-  <!-- STACK -->
-  <section id="stack">
-    <div class="sec-h"><span class="dot" style="background:var(--violet)"></span><h2>Meds &amp; Supplements</h2></div>
-
-    <h3>Medicines (current)</h3>
-    <div class="card pad0"><ul>
-      <li><b>Famocid 40</b> (famotidine) — before breakfast — <span class="tag">replaces pantoprazole</span></li>
-      <li><b>Bandy-Plus</b> (albendazole 400 + ivermectin 6 mg) — 1 tab with dinner <b>×3 nights only</b> (deworming)</li>
-      <li><b>Aripiprazole 1.25</b> AM · <b>Clonazepam 0.5</b> SOS · <b>Nicotine patch 14</b> <span class="muted">(quitting goal; consider off at night)</span></li>
-      <li class="faint">Trazodone — <b>discontinued.</b> Skipped: Galia Forte · Digeraft · sucralfate · calcium.</li>
-    </ul></div>
-
-    <h3>Supplements (self-sourced)</h3>
-    <div class="card pad0"><table>
-      <tr><th>What</th><th>Dose &amp; timing</th></tr>
-      <tr><td class="k">Iron <span class="pill p-blue">Carbamide F.</span></td><td>Chelated (bisglycinate) + C + folate + B12 — <b>alt-day mornings</b>, empty stomach, away from coffee/dairy/Famocid. <span class="muted">Covers iron + B12 + folate.</span></td></tr>
-      <tr><td class="k">Vitamin D3</td><td><b>Uprise-D3 60K</b> 1×/week ×8 wks → then <b>2000 IU</b> daily, with a fatty meal</td></tr>
-      <tr><td class="k">Omega-3 <span class="pill p-blue">Triple Str.</span></td><td>825 mg EPA+DHA/softgel — <b>3/day with meals</b> (~2.5 g). Keep refrigerated.</td></tr>
-      <tr><td class="k">Magnesium</td><td>Glycinate <b>1 tab (220 mg)</b> at night (trial) · spaced from iron</td></tr>
-      <tr><td class="k">Psyllium</td><td>Isabgol 1 tsp in water before a meal · ≥2 h from meds</td></tr>
-      <tr><td class="k">Whey</td><td>MuscleBlaze Iso-Zero — 1 scoop/day (post-workout / protein gap)</td></tr>
-      <tr><td class="k">Probiotic</td><td>Optional; most useful during future H. pylori eradication</td></tr>
-    </table></div>
-
-    <div class="card" style="background:var(--accent-soft);border-color:#cfeae4;">
-      <b>💬 Ask the doctor — metformin</b><br><span class="muted">For the insulin resistance (not high sugar). Mention the <b>aripiprazole</b> — it strengthens the case.</span>
-    </div>
-    <p class="faint">Recheck at ~3 months: ferritin · Vitamin D · B12 · lipids · HbA1c · insulin.</p>
-  </section>
-
-  <!-- MOVE -->
-  <section id="move">
-    <div class="sec-h"><span class="dot" style="background:var(--amber)"></span><h2>Exercise · Apple Fitness+</h2></div>
-
-    <h3>Start here</h3>
-    <div class="card pad0"><ul>
-      <li><b>1 · Strength Basics in 3 Weeks</b> — learn the lifts/form first</li>
-      <li><b>2 · Make Your Fitness Comeback</b> (4 wks · 3×10 min) — your ramp</li>
-      <li><b>3 · Workouts for Beginners</b> + <b>Time to Walk</b> / Treadmill — cardio base</li>
-      <li>Filter <b>Low-Impact · 10–20 min</b> · use <b>Custom Plans</b> to schedule</li>
-    </ul></div>
-
-    <h3>Weekly schedule</h3>
-    <div class="card pad0"><table>
-      <tr><th>Day</th><th>Session</th></tr>
-      <tr><td class="k">Mon</td><td>Strength + 15-min walk</td></tr>
-      <tr><td class="k">Tue</td><td>Cardio 30 min (walk/cycle · Zone 2)</td></tr>
-      <tr><td class="k">Wed</td><td>Strength + light Core</td></tr>
-      <tr><td class="k">Thu</td><td>Cardio 30 min (Time to Walk)</td></tr>
-      <tr><td class="k">Fri</td><td>Strength</td></tr>
-      <tr><td class="k">Sat</td><td>Long easy cardio 40–45 min</td></tr>
-      <tr><td class="k">Sun</td><td>Yoga + Mindful Cooldown + walk</td></tr>
-    </table></div>
-
-    <h3>Rules</h3>
-    <div class="card pad0"><ul>
-      <li>Daily steps → build to <b>8–10k</b></li>
-      <li>Cardio in <b>Zone 2 (~120–140 bpm)</b>, conversational · cleared at 7 METS → <b>ramp gradually</b></li>
-      <li>Train <b>morning or late afternoon</b>, not right after meals (reflux) · whey post-workout</li>
-      <li>⚠️ Stop if chest pain, severe breathlessness, or dizziness</li>
-    </ul></div>
-  </section>
-
-  <!-- SLEEP -->
-  <section id="sleep">
-    <div class="sec-h"><span class="dot" style="background:#3a4a8a"></span><h2>Sleep</h2></div>
-    <div class="card">Deep sleep averages ~80 min (normal). The real problem is <b>late, irregular bedtimes → short sleep → lost REM.</b> Deep sleep is front-loaded; REM is in the early-morning hours you cut off by sleeping late.</div>
-
-    <h3>The fix — anchors first</h3>
-    <div class="card pad0"><ul>
-      <li><b>1 · Morning bright light</b> within 30–60 min of waking — strongest lever to shift your clock earlier</li>
-      <li><b>2 · Fixed wake time</b> daily — don't sleep in to "catch up"</li>
-      <li>Move bedtime earlier <b>gradually</b> (15–30 min every few nights)</li>
-      <li>Wind-down + screens off 1–2 h before bed (Mindful Cooldown)</li>
-      <li>Caffeine cutoff early afternoon · no evening nicotine · cool dark room</li>
-      <li>Sleep on your <b>side, head slightly raised</b> (OSA + reflux)</li>
-    </ul></div>
-    <p class="faint">Trazodone stopped → expect lighter sleep for a week or two; behavioural tools now do the work. Magnesium → move to AM if it wakes you.</p>
-
-    <h3>OSA</h3>
-    <div class="card pad0"><ul>
-      <li>Strong profile: snoring · daytime tiredness · <b>small jaw</b> · nasal block · family pattern. <b>Study booked — Yashoda next week.</b></li>
-      <li>Moderate–severe → <b>CPAP</b> (works fine with Invisalign). Oral appliance later (coordinate with orthodontist).</li>
-      <li><b>Weight loss is the cure lever</b> — may make CPAP temporary.</li>
-      <li>Nose: start an <b>intranasal steroid spray</b> (shrinks the turbinate); side-switching block = normal nasal cycle.</li>
-    </ul></div>
-  </section>
-
-  <!-- TESTS -->
-  <section id="tests">
-    <div class="sec-h"><span class="dot" style="background:var(--red)"></span><h2>Tests &amp; Tracking</h2></div>
-
-    <h3>Booked / pending</h3>
-    <div class="card pad0"><table>
-      <tr><th>Test</th><th>When &amp; notes</th></tr>
-      <tr><td class="k">Sleep study</td><td><b>Yashoda, next week.</b> Mention: small jaw, snoring, family pattern, Invisalign, frequent waking.</td></tr>
-      <tr><td class="k">H. pylori</td><td><b>Stool test — whole family, ~3 weeks.</b> Stop Famocid 2 days before (bridge Gaviscon); no antibiotics 4 wks (dewormer doesn't count). Treat positives together; re-test cure 4 wks after.</td></tr>
-      <tr><td class="k">Celiac</td><td><b>Later.</b> tTG unreliable on a rice diet → needs a gluten challenge or DNA. Revisit only if iron won't correct.</td></tr>
-      <tr><td class="k">Metformin</td><td>Discuss with doctor (mention aripiprazole).</td></tr>
-    </table></div>
-
-    <h3>Recheck at ~3 months</h3>
-    <div class="card pad0"><ul><li>Ferritin · Vitamin D · B12 · lipid panel (HDL/TG) · HbA1c · fasting insulin (HOMA-IR)</li></ul></div>
-
-    <h3>Track the trend</h3>
-    <div class="card pad0"><ul>
-      <li><b>Weight</b> weekly (toward 10–12 kg / 4 months) · <b>Waist</b> — best visceral-fat marker</li>
-      <li><b>Home BP log</b> — twice daily ×1 week (off recent coffee/nicotine)</li>
-      <li><b>Deep sleep / bedtime</b> — AutoSleep trend (earlier, more consistent bedtime)</li>
-      <li>Body comp — MEDITIVE scale (trend, not daily numbers)</li>
-    </ul></div>
-
-    <footer>Health Plan · compiled from Yashoda + Vijaya reports (Jun 2026) · personal reference, not medical advice.</footer>
-  </section>
-
+<div class="footer">
+  Personal protocol · compiled from Yashoda + Vijaya reports (Jun 2026) + deep-research synthesis. NOT medical advice — discuss meds (GLP-1/metformin), exercise intensity, and surgery timing with your doctors. Do not change psychiatric medication without your psychiatrist.
 </div>
 
 <script>
-  // scrollspy nav
-  var links=[].slice.call(document.querySelectorAll('#nav a'));
-  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
-  var obs=new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(e.isIntersecting){
-        var id='#'+e.target.id;
-        links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')===id);});
-      }
-    });
-  },{rootMargin:'-45% 0px -50% 0px'});
-  secs.forEach(function(s){if(s)obs.observe(s);});
+const phases=[
+{id:0,title:"Phase 0 · Pre-Launch",duration:"Week 0 (now)",color:"#e74c3c",icon:"🩺",goal:"Set the deficit, the tools, and the doctor conversations",sections:[
+ {heading:"Set the deficit (the lever)",items:[
+  "Target <b>~1600–1800 kcal/day</b> (≈500–750 deficit from ~2400–2600 maintenance) → ~1 kg/week",
+  "Pattern: <b>lower-carb, Indian-adapted</b> (cut rice/maida/sugar; build meals on protein + dal + veg + healthy fat) OR <b>5:2</b> — verified roughly equal, so pick what you'll actually stick to",
+  "<b>5:2 caveat:</b> clashes with reflux — no late or large meals, don't lie down after eating",
+  "High protein at every meal (eggs, chicken, fish, paneer, dal, whey) — standard guidance to protect muscle",
+  "Install a food tracker (log everything for the first 2–4 weeks to calibrate)"]},
+ {heading:"Doctor conversations (book now)",items:[
+  "<b>GLP-1 (tirzepatide/Mounjaro or semaglutide)</b> — the highest-probability way to <i>guarantee</i> 15 kg. Prescription, doctor-decided. ⚠ Flag your <b>reflux</b> (GLP-1s can worsen GERD) + your meds",
+  "<b>Metformin</b> — for the insulin resistance (HOMA-IR 6.7); mention the aripiprazole",
+  "Smoking-cessation support (patch ± doctor-chosen meds — bupropion/varenicline interact with psych meds)",
+  "BP plan — 140/93 may need treatment, and it gates HIIT",
+  "Tell psychiatrist you're starting an intensive program (don't change meds yourself)"]},
+ {heading:"Baseline & setup",items:[
+  "<b>Omron Karada HBF-375</b> — hand-to-foot body-comp baseline (weight, body-fat %, visceral fat, muscle)",
+  "Waist measurement · progress photos (front/side/back) · home BP 3-day average",
+  "Apple Watch: resting HR + VO₂max baseline · simple fitness test (max push-ups, 6-min walk)",
+  "Most bloods already done (Yashoda + Vijaya) — this is your Phase-0 baseline"]},
+ {heading:"Sleep, nose & deficiencies",items:[
+  "Book the <b>sleep study (Yashoda, this week)</b> — OSA gates HIIT and shapes the septum surgery",
+  "Start <b>intranasal steroid spray</b> (turbinate) — 6-week trial",
+  "Start the supplement stack: Vitamin D 60K weekly, iron (alt-days), B12/folate, omega-3 3/day",
+  "<b>Set a quit-smoking date within these first 2 weeks</b>"]}]},
 
-  // daily checklist
-  var ITEMS=[
-    {id:'patch', t:'Nicotine patch on',                 w:'Wake'},
-    {id:'arip',  t:'Aripiprazole 1.25',                 w:'Wake'},
-    {id:'famo',  t:'Famocid 40 (30 min pre-breakfast)', w:'Wake'},
-    {id:'iron',  t:'Iron + vitamin C', s:'★ alternate days only', w:'AM'},
-    {id:'light', t:'Morning daylight (10–20 min)',      w:'AM'},
-    {id:'om1',   t:'Omega-3 #1',                        w:'B’fast'},
-    {id:'om2',   t:'Omega-3 #2',                        w:'Lunch'},
-    {id:'vitd',  t:'Vitamin D 60K', s:'★ once a week only', w:'Lunch'},
-    {id:'psyl',  t:'Psyllium (in water)',               w:'Pre-din'},
-    {id:'om3',   t:'Omega-3 #3',                        w:'Dinner'},
-    {id:'whey',  t:'Whey (1 scoop)',                    w:'Workout'},
-    {id:'move',  t:'Movement / workout',                w:'Day'},
-    {id:'mag',   t:'Magnesium 1 tab (220 mg)',          w:'Night'},
-    {id:'bed',   t:'Wind-down · screens off · earlier bed', w:'Night'}
-  ];
-  var TICK='<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>';
-  function key(){var d=new Date();return 'hp-'+d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
-  function load(){try{return JSON.parse(localStorage.getItem(key()))||{};}catch(e){return {};}}
-  var state=load();
-  function save(){localStorage.setItem(key(),JSON.stringify(state));}
-  function render(){
-    var box=document.getElementById('checklist');box.innerHTML='';
-    ITEMS.forEach(function(it){
-      var r=document.createElement('div');
-      r.className='chk'+(state[it.id]?' done':'');
-      r.innerHTML='<div class="cbox">'+TICK+'</div><div class="t">'+it.t+(it.s?'<small>'+it.s+'</small>':'')+'</div><span class="w">'+it.w+'</span>';
-      r.onclick=function(){state[it.id]=!state[it.id];save();render();};
-      box.appendChild(r);
-    });
-    var done=ITEMS.filter(function(i){return state[i.id];}).length;
-    document.getElementById('pcount').textContent=done+' / '+ITEMS.length;
-    document.getElementById('pbar').style.width=(done/ITEMS.length*100)+'%';
-  }
-  function resetDay(){state={};save();render();}
-  render();
+{id:1,title:"Phase 1 · Foundation",duration:"Weeks 1–4",color:"#f39c12",icon:"🧱",goal:"Lock the deficit, learn the lifts, quit smoking",sections:[
+ {heading:"Diet — execute the deficit",items:[
+  "Hold ~1600–1800 kcal, lower-carb + high protein, Indian-adapted",
+  "Protein every meal · fiber 30g+ (veg, dal, psyllium) · water 3.5–4 L",
+  "Cut: sugar, maida, white rice portions, fried, alcohol, sugary drinks",
+  "Last meal ~3 h before bed (reflux + sleep)"]},
+ {heading:"Training — build the base (home gym)",items:[
+  "<b>Resistance 3×/week</b> — barbell: squat, deadlift, bench, row, OHP. Weeks 1–2 light/form-first, then add load",
+  "<b>Zone 2 cardio 3–4×/week</b> — brisk walk / cycle, conversational (~120–140 bpm)",
+  "Steps: build to <b>8–10k/day</b>",
+  "<b>NO HIIT yet</b> — your BP + suspected OSA gate it",
+  "Mobility 10 min/day; foam-roll post-lift"]},
+ {heading:"Quit smoking (execute)",items:[
+  "Hit your quit date · use the patch + behavioural swaps",
+  "Biggest lever for HDL, CRP, lung age — and required before septum surgery"]},
+ {heading:"Weekly targets",items:[
+  "W1 → 102 kg · W2 → 101 · W3 → 100 · W4 → <b>99 kg (−4)</b>",
+  "Expect faster drop week 1 (water) · energy rising as Vit-D/iron correct"]}]},
+
+{id:2,title:"Phase 2 · Build",duration:"Weeks 5–8",color:"#27ae60",icon:"🔥",goal:"Progressive overload, deeper conditioning, mid-point bloods",sections:[
+ {heading:"Diet",items:[
+  "Hold the deficit · keep protein high",
+  "If you stall 2+ weeks: a single higher-calorie 'diet-break' day, then resume",
+  "Recheck portions against the tracker — creep is the #1 stall cause"]},
+ {heading:"Training — add intensity (carefully)",items:[
+  "Resistance 3–4×/week · <b>progressive overload</b> (+small load weekly)",
+  "Zone 2 volume up · steps 10k/day",
+  "<b>Introduce LIGHT intervals (incline-walk) only if BP is controlled</b> — not full HIIT yet",
+  "Work toward your first unassisted pull-up (banded)"]},
+ {heading:"Mid-point bloods (Week 8)",items:[
+  "HbA1c · fasting insulin (HOMA-IR) · lipids · liver enzymes · ferritin · Vitamin D",
+  "Compare to baseline — expect HOMA-IR + triglycerides already moving",
+  "If sleep study was positive: <b>treat the OSA now</b> (CPAP) — it accelerates everything"]},
+ {heading:"Weekly targets",items:[
+  "W5 → 98 · W6 → 97 · W7 → 96 · W8 → <b>95 kg (−8)</b>",
+  "Visible change: face, neck, waist · lifts climbing"]}]},
+
+{id:3,title:"Phase 3 · Peak",duration:"Weeks 9–12",color:"#2980b9",icon:"⚡",goal:"Max fat loss, true intervals (if cleared), strength peak",sections:[
+ {heading:"Diet",items:[
+  "Maintain deficit · protein highest priority (protect muscle in deeper deficit)",
+  "Largest meal post-workout · keep carbs around training"]},
+ {heading:"Training — HIIT (if cleared)",items:[
+  "<b>Add true HIIT (4×4 intervals) ONLY if BP controlled + cardiology okays</b> — this is the big VO₂max driver (~8–15% in 8 wks)",
+  "Heavy compounds 4×6–8 · steps 12k/day",
+  "If GLP-1 started: appetite is lower — <b>force the protein in</b> so you lose fat, not muscle"]},
+ {heading:"Weekly targets",items:[
+  "W9 → 94 · W10 → 93 · W11 → 92 · W12 → <b>91 kg (−12)</b>",
+  "Energy + sleep noticeably better · clothes loose"]}]},
+
+{id:4,title:"Phase 4 · Lock",duration:"Weeks 13–16",color:"#8e44ad",icon:"👑",goal:"Final push, full re-assessment, lock the lifestyle",sections:[
+ {heading:"Diet & training",items:[
+  "Hold the deficit to the line · peak training intensity",
+  "No new restrictions — consistency is the whole game now"]},
+ {heading:"Final assessment (Week 16)",items:[
+  "Repeat bloods vs baseline · <b>repeat liver ultrasound</b> (expect fatty liver markedly improved)",
+  "Omron body-comp · BP · VO₂max · fitness test vs Day 1",
+  "Photos: final vs Day 1 · then build the maintenance plan"]},
+ {heading:"Weekly targets + end state",items:[
+  "W13 → 90 · W14 → 89.5 · W15 → 89 · W16 → <b>88 kg (−15)</b>",
+  "Target: ~22% BF · HOMA-IR toward &lt;2.5 · TG &lt;150 · BP improved · fatty liver reversing",
+  "<b>Biologically younger than 34</b> on the metabolic/vascular/fitness axes"]}]}
+];
+
+const wkTargets=[
+ {w:"W1",kg:"102",d:"start",c:"#f39c12"},{w:"W2",kg:"101",d:"",c:"#f39c12"},{w:"W3",kg:"100",d:"",c:"#f39c12"},{w:"W4",kg:"99",d:"−4",c:"#f39c12"},
+ {w:"W5",kg:"98",d:"",c:"#27ae60"},{w:"W6",kg:"97",d:"",c:"#27ae60"},{w:"W7",kg:"96",d:"",c:"#27ae60"},{w:"W8",kg:"95",d:"−8 · bloods",c:"#27ae60"},
+ {w:"W9",kg:"94",d:"",c:"#2980b9"},{w:"W10",kg:"93",d:"",c:"#2980b9"},{w:"W11",kg:"92",d:"",c:"#2980b9"},{w:"W12",kg:"91",d:"−12",c:"#2980b9"},
+ {w:"W13",kg:"90",d:"",c:"#8e44ad"},{w:"W14",kg:"89",d:"",c:"#8e44ad"},{w:"W15",kg:"89",d:"",c:"#8e44ad"},{w:"W16",kg:"88",d:"−15 · USG",c:"#8e44ad"}
+];
+
+const tplDays=[
+ {d:"Mon",w:"Strength A\n+ walk",c:"#e74c3c"},{d:"Tue",w:"Zone 2\ncardio",c:"#3498db"},{d:"Wed",w:"Strength B",c:"#e74c3c"},
+ {d:"Thu",w:"Zone 2 /\nintervals*",c:"#3498db"},{d:"Fri",w:"Strength C",c:"#e74c3c"},{d:"Sat",w:"Long easy\ncardio",c:"#3498db"},{d:"Sun",w:"Mobility\n+ walk",c:"#2ecc71"}
+];
+const tplLeg=[["#e74c3c","Strength (home gym)"],["#3498db","Cardio (Z2 → HIIT*)"],["#2ecc71","Recovery"]];
+
+const progress=[{label:"103kg",sub:"~32%",color:"#e74c3c"},{label:"99kg",sub:"~30%",color:"#f39c12"},{label:"95kg",sub:"~28%",color:"#27ae60"},{label:"91kg",sub:"~25%",color:"#2980b9"},{label:"88kg",sub:"~22%",color:"#8e44ad"}];
+
+const evidence=[
+ "<b>Calorie deficit is the only verified lever</b> for large weight loss — exercise alone = ~0.05–1 kg. Diet does the 15 kg.",
+ "<b>&gt;10% body-weight loss reverses NAFLD</b> — ~90% NASH resolution, ~45% fibrosis regression. Your −15 kg IS the liver cure.",
+ "<b>Low-carb (&lt;26%) or 5:2</b> = most favorable for your TG/HbA1c/BP — but ≈ equal to Mediterranean once weight is matched. Pick by adherence.",
+ "<b>Combined resistance + aerobic beats single-mode</b> (network meta-analysis, 81 RCTs).",
+ "<b>HIIT lifts VO₂max ~8–15% + insulin glucose-disposal ~30–42% in 8 wks</b> — powerful, but ramp to it (OSA + BP).",
+ "NOT verified in this pass (→ doctor-decided): GLP-1 numbers, supplements, exact protein dosing, tools. Standard guidance, not proof."
+];
+
+const meds=[
+ "<b>GLP-1 (tirzepatide/Mounjaro · semaglutide)</b> — the single most reliable accelerator to <i>guarantee</i> 15 kg. Prescription. ⚠ can worsen your reflux; raise with doctor + flag your meds. Mounjaro is available in India.",
+ "<b>Metformin</b> — targets the insulin resistance; cheap, safe with your meds; discuss with GP (mention aripiprazole).",
+ "<b>Supplement stack (from checkup):</b> Vitamin D 60K weekly · iron (alt-days) + C/B12/folate · omega-3 3/day · magnesium · whey to hit protein · psyllium.",
+ "<b>Skip:</b> fat-burners and hype supplements — no evidence."
+];
+
+const surgery=[
+ "<b>1. Sleep study FIRST</b> — the surgeon needs your OSA severity / whether you'll need CPAP.",
+ "<b>2. Combine septoplasty + turbinate reduction</b> — you have both; don't fix only the septum.",
+ "<b>3. Be smoke-free before surgery</b> — smoking impairs healing; surgeons want you off it.",
+ "<b>4. Control BP (140/93)</b> before an elective op.",
+ "<b>5. Some weight off first</b> — your 16-week plan sets this up. Timing: elective, optimise then operate (your + surgeon's call).",
+ "Expect: much better breathing after — but you may still snore/have apnea (weight + jaw), so keep the OSA plan running."
+];
+
+const rules=[
+ "The deficit is the lever — track calories, especially weeks 1–4.",
+ "Do NOT front-load HIIT — your BP 140/93 + suspected OSA must be handled first.",
+ "Quit smoking — non-negotiable, and required before septum surgery.",
+ "Protein every meal — protect muscle while the fat comes off.",
+ "Never crash below ~1500 kcal — muscle loss, gallstones, rebound.",
+ "Weigh the weekly trend (same conditions) — daily weight is noise.",
+ "GLP-1 / metformin / any med — only via your doctor. Never touch psych meds yourself.",
+ "Treat the OSA if confirmed — untreated, it fights your BP, insulin, and recovery."
+];
+
+const tracking=[
+ {f:"Daily",d:"Apple Watch: steps, HR, sleep · food log"},
+ {f:"Weekly",d:"Omron weigh-in + waist (Sun AM, fasted)"},
+ {f:"Wk 8 + 16",d:"Bloods: HbA1c, insulin, lipids, LFT, ferritin, Vit-D"},
+ {f:"Wk 16",d:"Repeat liver USG · body-comp · BP · fitness test"}
+];
+
+const equipment=[
+ ["✅","Home gym — barbell, bench, dumbbells, mat"],["✅","Apple Watch SE 2 · MEDITIVE scale · BP cuff"],
+ ["🛒","Omron Karada HBF-375 (hand-to-foot body comp)"],["🛒","Food-tracking app (calorie + protein)"],
+ ["🛒","Kitchen scale"],["◻︎","CGM — optional, to see your insulin-resistance response to foods"],
+ ["◻︎","Apple Fitness+ — guided cardio/strength sessions"],["◻︎","Resistance bands + pull-up bar"]
+];
+
+let active=0;
+function render(){
+ const p=phases[active];
+ document.documentElement.style.setProperty('--pc',p.color);
+ document.getElementById('hl').style.color=p.color;
+ document.getElementById('header').style.borderBottomColor=p.color;
+ document.getElementById('tabs').innerHTML=phases.map((ph,i)=>`<button class="tab${i===active?' active':''}" onclick="setP(${i})" style="${i===active?`background:${ph.color};border-color:${ph.color}`:''}">${ph.icon} ${i===0?'PRE':'P'+i}</button>`).join('');
+ const ph=document.getElementById('phaseHeader');ph.style.borderLeftColor=p.color;
+ ph.innerHTML=`<div class="phase-title">${p.title}</div><div class="phase-sub" style="color:${p.color}">${p.duration} · ${p.goal}</div>`;
+ document.getElementById('sections').innerHTML=p.sections.map((s,si)=>`<div class="section open" id="s${si}"><button class="section-btn" onclick="tog('s${si}')"><span>${s.heading}</span><span style="color:#555;font-size:16px">−</span></button><div class="section-content">${s.items.map(it=>`<div class="item">${it}</div>`).join('')}</div></div>`).join('');
+ document.getElementById('progressBar').innerHTML=progress.map((pt,i)=>`<div class="progress-point"><div class="progress-line" style="background:${i<=active?pt.color:'#333'}"></div><div class="progress-dot" style="background:${i<=active?pt.color:'#333'};${i===active?'border-color:#fff':''}"></div><div class="progress-kg" style="color:${i<=active?'#fff':'#555'}">${pt.label}</div><div class="progress-bf" style="color:${i<=active?pt.color:'#444'}">${pt.sub}</div></div>`).join('');
+}
+function setP(i){active=i;render();window.scrollTo(0,0)}
+function tog(id){const el=document.getElementById(id);el.classList.toggle('open');el.querySelector('.section-btn span:last-child').textContent=el.classList.contains('open')?'−':'+'}
+
+document.getElementById('wkGrid').innerHTML=wkTargets.map(w=>`<div class="wk" style="border-top-color:${w.c}"><div class="wk-n">${w.w}</div><div class="wk-kg">${w.kg}</div><div class="wk-d" style="color:${w.c}">${w.d}</div></div>`).join('');
+document.getElementById('tpl').innerHTML=tplDays.map(t=>`<div class="tpl-d" style="border-top-color:${t.c}"><div class="tpl-day">${t.d}</div><div class="tpl-w">${t.w.replace(/\n/g,'<br>')}</div></div>`).join('');
+document.getElementById('tplLegend').innerHTML=tplLeg.map(([c,l])=>`<div class="legend-item"><div class="legend-dot" style="background:${c}"></div><span class="legend-label">${l}</span></div>`).join('')+'<span class="legend-label">* intervals only after BP/OSA cleared</span>';
+document.getElementById('evContent').innerHTML=evidence.map(e=>`<div class="box-row">${e}</div>`).join('');
+document.getElementById('medContent').innerHTML=meds.map(m=>`<div class="box-row">${m}</div>`).join('');
+document.getElementById('surgContent').innerHTML=surgery.map(s=>`<div class="box-row">${s}</div>`).join('');
+document.getElementById('rulesContent').innerHTML=rules.map(r=>`<div class="box-row">${r}</div>`).join('');
+document.getElementById('trackGrid').innerHTML=tracking.map(t=>`<div class="track-card"><div class="track-f">${t.f}</div><div class="track-d">${t.d}</div></div>`).join('');
+document.getElementById('equipContent').innerHTML=equipment.map(([s,i])=>`<div class="equip-item ${s==='✅'?'have':'need'}"><span>${s}</span><span>${i}</span></div>`).join('');
+render();
 </script>
 </body>
 </html>

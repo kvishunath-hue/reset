@@ -75,12 +75,12 @@ body{font-family:'JetBrains Mono',monospace;background:#0a0a0a;color:#e0e0e0;min
 
 <div class="header" id="header">
   <div class="header-label" id="hl">16-Week Metabolic Reset · v2 (post-checkup)</div>
-  <div class="header-title">103 kg → 88 kg</div>
-  <div class="header-sub">~32% → ~22% body fat · Vishwanath · 34M · Huzurabad · 16 weeks · reverse the fatty liver + insulin resistance</div>
+  <div class="header-title">103 kg → 87 kg</div>
+  <div class="header-sub">~32% → ~21% body fat · Vishwanath · 34M · Huzurabad · 16 weeks · reverse the fatty liver + insulin resistance</div>
 </div>
 
 <div class="truth">
-  <b>The one lever:</b> a sustained calorie deficit drives the 15 kg — verified evidence shows exercise alone gives only ~0.05–1 kg. Training builds fitness + saves muscle; <b>diet does the weight.</b> And <b>&gt;10% loss reverses your fatty liver</b> (~90% NASH resolution). Deficit first, everything else amplifies it.
+  <b>The one lever:</b> a sustained calorie deficit drives the 16 kg — verified evidence shows exercise alone gives only ~0.05–1 kg. Training builds fitness + saves muscle; <b>diet does the weight.</b> And <b>&gt;10% loss reverses your fatty liver</b> (~90% NASH resolution). Deficit first, everything else amplifies it.
 </div>
 
 <div class="tabs" id="tabs"></div>
@@ -144,7 +144,7 @@ const phases=[
   "Target <b>~1600–1800 kcal/day</b> (≈500–750 deficit from ~2400–2600 maintenance) → ~1 kg/week",
   "Pattern: <b>lower-carb, Indian-adapted</b> (cut rice/maida/sugar; build meals on protein + dal + veg + healthy fat) OR <b>5:2</b> — verified roughly equal, so pick what you'll actually stick to",
   "<b>5:2 caveat:</b> clashes with reflux — no late or large meals, don't lie down after eating",
-  "High protein at every meal (eggs, chicken, fish, paneer, dal, whey) — standard guidance to protect muscle",
+  "High protein — <b>~1.6–2.2 g/kg (~150–180 g/day)</b>, 20–40 g/meal (eggs, chicken, fish, paneer, dal, whey) — preserves muscle in the deficit",
   "Install a food tracker (log everything for the first 2–4 weeks to calibrate)"]},
  {heading:"Doctor conversations (book now)",items:[
   "<b>GLP-1 (tirzepatide/Mounjaro or semaglutide)</b> — the highest-probability way to <i>guarantee</i> 15 kg. Prescription, doctor-decided. ⚠ Flag your <b>reflux</b> (GLP-1s can worsen GERD) + your meds",
@@ -221,8 +221,8 @@ const phases=[
   "Omron body-comp · BP · VO₂max · fitness test vs Day 1",
   "Photos: final vs Day 1 · then build the maintenance plan"]},
  {heading:"Weekly targets + end state",items:[
-  "W13 → 90 · W14 → 89.5 · W15 → 89 · W16 → <b>88 kg (−15)</b>",
-  "Target: ~22% BF · HOMA-IR toward &lt;2.5 · TG &lt;150 · BP improved · fatty liver reversing",
+  "W13 → 90 · W14 → 89 · W15 → 88 · W16 → <b>87 kg (−16)</b>",
+  "Target: ~21% BF · HOMA-IR toward &lt;2.5 · TG &lt;150 · BP improved · fatty liver reversing",
   "<b>Biologically younger than 34</b> on the metabolic/vascular/fitness axes"]}]}
 ];
 
@@ -230,7 +230,7 @@ const wkTargets=[
  {w:"W1",kg:"102",d:"start",c:"#f39c12"},{w:"W2",kg:"101",d:"",c:"#f39c12"},{w:"W3",kg:"100",d:"",c:"#f39c12"},{w:"W4",kg:"99",d:"−4",c:"#f39c12"},
  {w:"W5",kg:"98",d:"",c:"#27ae60"},{w:"W6",kg:"97",d:"",c:"#27ae60"},{w:"W7",kg:"96",d:"",c:"#27ae60"},{w:"W8",kg:"95",d:"−8 · bloods",c:"#27ae60"},
  {w:"W9",kg:"94",d:"",c:"#2980b9"},{w:"W10",kg:"93",d:"",c:"#2980b9"},{w:"W11",kg:"92",d:"",c:"#2980b9"},{w:"W12",kg:"91",d:"−12",c:"#2980b9"},
- {w:"W13",kg:"90",d:"",c:"#8e44ad"},{w:"W14",kg:"89",d:"",c:"#8e44ad"},{w:"W15",kg:"89",d:"",c:"#8e44ad"},{w:"W16",kg:"88",d:"−15 · USG",c:"#8e44ad"}
+ {w:"W13",kg:"90",d:"",c:"#8e44ad"},{w:"W14",kg:"89",d:"",c:"#8e44ad"},{w:"W15",kg:"88",d:"",c:"#8e44ad"},{w:"W16",kg:"87",d:"−16 · USG",c:"#8e44ad"}
 ];
 
 const tplDays=[
@@ -239,11 +239,11 @@ const tplDays=[
 ];
 const tplLeg=[["#e74c3c","Strength (home gym)"],["#3498db","Cardio (Z2 → HIIT*)"],["#2ecc71","Recovery"]];
 
-const progress=[{label:"103kg",sub:"~32%",color:"#e74c3c"},{label:"99kg",sub:"~30%",color:"#f39c12"},{label:"95kg",sub:"~28%",color:"#27ae60"},{label:"91kg",sub:"~25%",color:"#2980b9"},{label:"88kg",sub:"~22%",color:"#8e44ad"}];
+const progress=[{label:"103kg",sub:"~32%",color:"#e74c3c"},{label:"99kg",sub:"~30%",color:"#f39c12"},{label:"95kg",sub:"~28%",color:"#27ae60"},{label:"91kg",sub:"~25%",color:"#2980b9"},{label:"87kg",sub:"~21%",color:"#8e44ad"}];
 
 const evidence=[
- "<b>Calorie deficit is the only verified lever</b> for large weight loss — exercise alone = ~0.05–1 kg. Diet does the 15 kg.",
- "<b>&gt;10% body-weight loss reverses NAFLD</b> — ~90% NASH resolution, ~45% fibrosis regression. Your −15 kg IS the liver cure.",
+ "<b>Calorie deficit is the only verified lever</b> for large weight loss — exercise alone = ~0.05–1 kg. Diet does the 16 kg.",
+ "<b>&gt;10% body-weight loss reverses NAFLD</b> — ~90% NASH resolution, ~45% fibrosis regression. Your −16 kg IS the liver cure.",
  "<b>Low-carb (&lt;26%) or 5:2</b> = most favorable for your TG/HbA1c/BP — but ≈ equal to Mediterranean once weight is matched. Pick by adherence.",
  "<b>Combined resistance + aerobic beats single-mode</b> (network meta-analysis, 81 RCTs).",
  "<b>HIIT lifts VO₂max ~8–15% + insulin glucose-disposal ~30–42% in 8 wks</b> — powerful, but ramp to it (OSA + BP).",
@@ -251,7 +251,7 @@ const evidence=[
 ];
 
 const meds=[
- "<b>GLP-1 (tirzepatide/Mounjaro · semaglutide)</b> — the single most reliable accelerator to <i>guarantee</i> 15 kg. Prescription. ⚠ can worsen your reflux; raise with doctor + flag your meds. Mounjaro is available in India.",
+ "<b>GLP-1 — the reliable accelerator (getting clearance).</b> Head-to-head: tirzepatide/Mounjaro ~20% loss &gt; semaglutide ~14% (SURMOUNT-5). India/mo: Mounjaro ~₹13–26k · Wegovy ~₹6–12k · generic semaglutide ~₹1,290. ⚠ slows gastric emptying → can worsen reflux/nausea (settles 1–2 mo) — manage with famotidine, slow titration, small low-fat meals. On a GLP-1, protein + lifting are MANDATORY (muscle-loss risk).",
  "<b>Metformin</b> — targets the insulin resistance; cheap, safe with your meds; discuss with GP (mention aripiprazole).",
  "<b>Supplement stack (from checkup):</b> Vitamin D 60K weekly · iron (alt-days) + C/B12/folate · omega-3 3/day · magnesium · whey to hit protein · psyllium.",
  "<b>Skip:</b> fat-burners and hype supplements — no evidence."
@@ -272,6 +272,7 @@ const rules=[
  "Quit smoking — non-negotiable, and required before septum surgery.",
  "Protein every meal — protect muscle while the fat comes off.",
  "Never crash below ~1500 kcal — muscle loss, gallstones, rebound.",
+ "Cap loss at ~1 kg/week — faster (especially on a GLP-1) raises gallstone + muscle-loss risk.",
  "Weigh the weekly trend (same conditions) — daily weight is noise.",
  "GLP-1 / metformin / any med — only via your doctor. Never touch psych meds yourself.",
  "Treat the OSA if confirmed — untreated, it fights your BP, insulin, and recovery."
@@ -286,7 +287,7 @@ const tracking=[
 
 const equipment=[
  ["✅","Home gym — barbell, bench, dumbbells, mat"],["✅","Apple Watch SE 2 · MEDITIVE scale · BP cuff"],
- ["🛒","Omron Karada HBF-375 (hand-to-foot body comp)"],["🛒","Food-tracking app (calorie + protein)"],
+ ["🛒","Omron Karada HBF-375 (hand-to-foot body comp)"],["✅","Skinfold caliper - body-fat % by sites (track trend)"],["🛒","Food-tracking app (calorie + protein)"],
  ["🛒","Kitchen scale"],["◻︎","CGM — optional, to see your insulin-resistance response to foods"],
  ["◻︎","Apple Fitness+ — guided cardio/strength sessions"],["◻︎","Resistance bands + pull-up bar"]
 ];

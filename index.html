@@ -68,6 +68,11 @@ body{font-family:'JetBrains Mono',monospace;background:#0a0a0a;color:#e0e0e0;min
 .legend-dot{width:8px;height:8px;border-radius:2px}
 .legend-label{font-size:9px;color:#666}
 .footer{font-size:9px;color:#444;text-align:center;padding:16px 0 4px;border-top:1px solid #1a1a1a;margin-top:22px;line-height:1.6}
+.sched{display:flex;gap:10px;font-size:11.5px;padding:6px 0;border-bottom:1px solid #1b1b1b;line-height:1.5}
+.sched:last-child{border-bottom:none}
+.sched-t{flex:0 0 92px;color:#1abc9c;font-weight:700}
+.sched-a{flex:1;color:#cfcfcf}
+.sched-a b{color:#fff}
 @media(max-width:500px){.track-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -96,6 +101,26 @@ body{font-family:'JetBrains Mono',monospace;background:#0a0a0a;color:#e0e0e0;min
   <div class="panel-title">Training week — template</div>
   <div style="overflow-x:auto"><div class="tpl" id="tpl"></div></div>
   <div class="legend" id="tplLegend"></div>
+</div>
+
+<div class="panel">
+  <div class="panel-title">Daily schedule · 6 AM–10 PM · 16:8 (eat 11–7) + 5:2</div>
+  <div class="sched"><div class="sched-t">06:00</div><div class="sched-a"><b>Wake</b> · daylight 10–20 min · nicotine patch · Aripiprazole · Famotidine · black coffee + water <span style="color:#777">(fasted)</span></div></div>
+  <div class="sched"><div class="sched-t">06:30</div><div class="sched-a"><b>Morning cardio</b> — Zone 2 walk/cycle (fasted) + sunlight <span style="color:#777">→ fat loss + fixes late bedtime</span></div></div>
+  <div class="sched"><div class="sched-t">08:00–11:00</div><div class="sched-a"><b>Work block 1</b> (fasted deep work)</div></div>
+  <div class="sched"><div class="sched-t">10:40</div><div class="sched-a">Psyllium in water <span style="color:#777">(before first meal)</span></div></div>
+  <div class="sched"><div class="sched-t">11:00</div><div class="sched-a"><b>Break-fast · meal 1</b> — protein + Omega-3 #1 + Vitamin D <span style="color:#777">(weekly day)</span></div></div>
+  <div class="sched"><div class="sched-t">11:45–14:45</div><div class="sched-a"><b>Work block 2</b></div></div>
+  <div class="sched"><div class="sched-t">14:45</div><div class="sched-a"><b>Lunch · meal 2</b> — protein + veg + Omega-3 #2</div></div>
+  <div class="sched"><div class="sched-t">15:30–17:30</div><div class="sched-a"><b>Work block 3</b> <span style="color:#777">(= 8 h total)</span></div></div>
+  <div class="sched"><div class="sched-t">16:30</div><div class="sched-a"><b>Iron + vitamin C</b> (alt-days) <span style="color:#777">— empty-ish, away from coffee/dairy</span></div></div>
+  <div class="sched"><div class="sched-t">17:45–18:45</div><div class="sched-a"><b>Strength training</b> (home gym) <span style="color:#777">— evening = strength + BP + glucose edge</span></div></div>
+  <div class="sched"><div class="sched-t">19:00</div><div class="sched-a"><b>Dinner · meal 3</b> + Whey + Omega-3 #3 <span style="color:#777">— eating window closes (fast 7 PM→11 AM)</span></div></div>
+  <div class="sched"><div class="sched-t">21:00</div><div class="sched-a">Screens off · wind-down</div></div>
+  <div class="sched"><div class="sched-t">21:30</div><div class="sched-a">Magnesium</div></div>
+  <div class="sched"><div class="sched-t">22:00</div><div class="sched-a"><b>Sleep</b> (fixed)</div></div>
+  <div class="sched"><div class="sched-t">SOS</div><div class="sched-a">Clonazepam as needed</div></div>
+  <div class="faint" style="margin-top:9px">Split workout (per research): <b>morning cardio</b> (fat loss + circadian) + <b>evening strength</b> (performance + BP + glucose); keep lifting ≥3 h before bed. <b>5:2:</b> 2 non-consecutive low days (~500–600 kcal) within the window, on lighter/rest days. If GLP-1/metformin start: weekly GLP-1 injection on a fixed day; metformin (XR) with dinner.</div>
 </div>
 
 <div class="panel">
@@ -143,7 +168,7 @@ const phases=[
  {heading:"Set the deficit (the lever)",items:[
   "Target <b>~1600–1800 kcal/day</b> (≈500–750 deficit from ~2400–2600 maintenance) → ~1 kg/week",
   "Pattern: <b>lower-carb, Indian-adapted</b> (cut rice/maida/sugar; build meals on protein + dal + veg + healthy fat) OR <b>5:2</b> — verified roughly equal, so pick what you'll actually stick to",
-  "<b>5:2 caveat:</b> clashes with reflux — no late or large meals, don't lie down after eating",
+  "<b>Your mix:</b> 16:8 daily (eat 11 AM–7 PM) + 5:2 — 2 non-consecutive low days (~500–600 kcal), ideally on rest/light days; protein still first",
   "High protein — <b>~1.6–2.2 g/kg (~150–180 g/day)</b>, 20–40 g/meal (eggs, chicken, fish, paneer, dal, whey) — preserves muscle in the deficit",
   "Install a food tracker (log everything for the first 2–4 weeks to calibrate)"]},
  {heading:"Doctor conversations (book now)",items:[
@@ -168,7 +193,7 @@ const phases=[
   "Hold ~1600–1800 kcal, lower-carb + high protein, Indian-adapted",
   "Protein every meal · fiber 30g+ (veg, dal, psyllium) · water 3.5–4 L",
   "Cut: sugar, maida, white rice portions, fried, alcohol, sugary drinks",
-  "Last meal ~3 h before bed (reflux + sleep)"]},
+  "Eating window closes ~7 PM (16:8) — last meal ~3 h before bed (sleep + insulin)"]},
  {heading:"Training — build the base (home gym)",items:[
   "<b>Resistance 3×/week</b> — barbell: squat, deadlift, bench, row, OHP. Weeks 1–2 light/form-first, then add load",
   "<b>Zone 2 cardio 3–4×/week</b> — brisk walk / cycle, conversational (~120–140 bpm)",

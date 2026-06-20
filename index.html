@@ -121,7 +121,7 @@ body{font-family:'JetBrains Mono',monospace;background:#0a0a0a;color:#e0e0e0;min
   <div class="sched"><div class="sched-t">21:30</div><div class="sched-a">Magnesium</div></div>
   <div class="sched"><div class="sched-t">22:00</div><div class="sched-a"><b>Sleep</b> (fixed)</div></div>
   <div class="sched"><div class="sched-t">SOS</div><div class="sched-a">Clonazepam as needed</div></div>
-  <div class="faint" style="margin-top:9px">Split workout (per research): <b>morning cardio</b> (fat loss + circadian) + <b>evening strength</b> (performance + BP + glucose); keep lifting ≥3 h before bed. <b>5:2:</b> 2 non-consecutive low days (~500–600 kcal) within the window, on lighter/rest days. If a GLP-1 starts: weekly injection on a fixed day, titrated up slowly.</div>
+  <div class="faint" style="margin-top:9px">Split workout (per research): <b>morning cardio</b> (fat loss + circadian) + <b>evening strength</b> (performance + BP + glucose); keep lifting ≥3 h before bed. <b>5:2:</b> 2 non-consecutive low days (~500–600 kcal) within the window, on lighter/rest days. <b>No carb-heavy late meals</b> — one caused a reactive glucose low (50); keep dinner earlier + lower-GI; CGM to watch it.</div>
 </div>
 
 <div class="panel">
@@ -160,7 +160,7 @@ body{font-family:'JetBrains Mono',monospace;background:#0a0a0a;color:#e0e0e0;min
 </div>
 
 <div class="footer">
-  Personal protocol · compiled from Yashoda + Vijaya reports (Jun 2026) + deep-research synthesis. NOT medical advice — discuss meds (GLP-1), exercise intensity, and surgery timing with your doctors. Do not change psychiatric medication without your psychiatrist.
+  Personal protocol · compiled from Yashoda + Vijaya reports (Jun 2026) + deep-research synthesis. NOT medical advice — discuss exercise intensity and surgery timing with your doctors. Do not change psychiatric medication without your psychiatrist.
 </div>
 
 <script>
@@ -173,7 +173,7 @@ const phases=[
   "High protein — <b>~1.6–2.2 g/kg (~150–180 g/day)</b>, 20–40 g/meal (eggs, chicken, fish, paneer, dal, whey) — preserves muscle in the deficit",
   "Install a food tracker (log everything for the first 2–4 weeks to calibrate)"]},
  {heading:"Doctor conversations (book now)",items:[
-  "<b>GLP-1 (your accelerator)</b> — locks in the 16 kg. <b>Best value: generic injectable semaglutide</b> (reputable DCGI-approved). Prescription via endocrinologist. ⚠ flag your <b>reflux</b> + meds; start low + titrate slow",
+  "<b>No GLP-1 / no metformin</b> — pure lifestyle (your call). Removes the appetite cushion, so the deficit rides fully on adherence: realistic 10–13 kg, 16 the stretch.",
   "Smoking-cessation support (patch ± doctor-chosen meds — bupropion/varenicline interact with psych meds)",
   "BP plan — 140/93 may need treatment, and it gates HIIT",
   "Tell psychiatrist you're starting an intensive program (don't change meds yourself)"]},
@@ -232,7 +232,7 @@ const phases=[
  {heading:"Training — HIIT (if cleared)",items:[
   "<b>Add true HIIT (4×4 intervals) ONLY if BP controlled + cardiology okays</b> — this is the big VO₂max driver (~8–15% in 8 wks)",
   "Heavy compounds 4×6–8 · steps 12k/day",
-  "If GLP-1 started: appetite is lower — <b>force the protein in</b> so you lose fat, not muscle"]},
+  "Appetite control is all you (no drug) — lower-GI + protein + fiber keep hunger steady; hit the 150 g protein floor daily"]},
  {heading:"Weekly targets",items:[
   "W9 → 94 · W10 → 93 · W11 → 92 · W12 → <b>91 kg (−12)</b>",
   "Energy + sleep noticeably better · clothes loose"]}]},
@@ -272,24 +272,25 @@ const evidence=[
  "<b>Low-carb (&lt;26%) or 5:2</b> = most favorable for your TG/HbA1c/BP — but ≈ equal to Mediterranean once weight is matched. Pick by adherence.",
  "<b>Combined resistance + aerobic beats single-mode</b> (network meta-analysis, 81 RCTs).",
  "<b>HIIT lifts VO₂max ~8–15% + insulin glucose-disposal ~30–42% in 8 wks</b> — powerful, but ramp to it (OSA + BP).",
- "NOT verified in this pass (→ doctor-decided): GLP-1 numbers, supplements, exact protein dosing, tools. Standard guidance, not proof."
+ "NOT verified in this pass (→ doctor-decided): supplement + protein dosing, exact targets, tools. Standard guidance, not proof."
 ];
 
 const meds=[
- "<b>Your GLP-1 pick — generic injectable semaglutide.</b> Same molecule as Wegovy, ~14% loss — plenty as an accelerator on top of your deficit. Cheapest (~₹1,290–4,200/mo · reputable DCGI-approved maker, e.g. Dr Reddy's). Tirzepatide/Mounjaro is stronger (~20%) but ~₹13–26k/mo — overkill here. ⚠ AVOID grey-market/compounded peptides; start low + titrate slow (reflux/nausea); protein + lifting MANDATORY.",
- "<b>Metformin — skipped</b> (diet + GLP-1 handle the insulin resistance).",
+ "<b>No GLP-1 — pure lifestyle approach (your decision).</b> Avoids cost/injections/GI side effects, but removes the appetite-suppression cushion → the deficit now rides entirely on adherence (realistic 10–13 kg, 16 the stretch). The lower-GI + protein + fiber diet keeps hunger steady without a drug. Revisit only if you plateau badly and choose to.",
+ "<b>Metformin — skipped too</b> (normoglycemic; diet + weight loss handle the insulin resistance).",
  "<b>Supplement stack (final):</b> Vit D — Uprise 60K wkly ×8 · Iron 29mg <b>daily</b> + vit C · <b>Methylcobalamin B12 1500</b> · Magnesium 220mg · Omega-3 3/day · Whey · Psyllium · <b>Creatine 5g</b> · <b>Multivitamin #1 (mornings)</b>.",
  "<b>Dosing notes (audited — all within safe limits):</b> recheck 25-OH-D after loading — maintenance likely <b>3000–4000 IU/day, not 2000</b> (your size + NAFLD); reassess ferritin 8–12 wk then drop one iron source (total 38.5mg ok short-term); the iron's B12 (2.2mcg) &amp; folate are token → the 1500 B12 does the real top-up, folate covered by iron+multivit+diet; take iron separate from the multivit; multivit = morning (ginseng). Picked multivit #1 over #2 (less interaction surface — no piperine).",
  "<b>Skip:</b> fat-burners and hype supplements — no evidence."
 ];
 
 const surgery=[
- "<b>1. Sleep study FIRST</b> — the surgeon needs your OSA severity / whether you'll need CPAP.",
+ "<b>Now: nose clears on Otrivin — STOP it (rebound risk), switch to a steroid spray (ask doctor).</b> With spray + weight loss, surgery is likely avoidable.",
+ "<b>1. Sleep study FIRST</b> (booked, next week) — gives OSA severity / whether you'd need CPAP.",
  "<b>2. Fix all three: septum + turbinates + nasal VALVE</b> — your 'pull-the-nostril-open helps' = positive Cottle, so a plain septoplasty won't fix the valve; it needs spreader grafts / functional rhinoplasty. Pick a functional-rhinoplasty ENT.",
  "<b>3. Be smoke-free before surgery</b> — smoking impairs healing; surgeons want you off it.",
  "<b>4. Control BP (140/93)</b> before an elective op.",
  "<b>5. Some weight off first</b> — your 16-week plan sets this up. Timing: elective, optimise then operate (your + surgeon's call).",
- "<b>Pre-op (4–5 mo out):</b> tell the anesthetist you're on a GLP-1 (2024 guidance: usually continue + 24h clear-liquid diet, not a blanket hold) · be nicotine-free (mucosal healing) · fish-oil bleeding risk is low — pause ~7 days before only if the ENT asks · keep iron going (treat anemia pre-op).",
+ "<b>Pre-op (if surgery happens):</b> be nicotine-free (mucosal healing) · fish-oil bleeding risk is low — pause ~7 days before only if the ENT asks · keep iron going (treat anemia pre-op).",
  "Expect: much better breathing after — but you may still snore/have apnea (weight + jaw), so keep the OSA plan running."
 ];
 
@@ -299,23 +300,23 @@ const rules=[
  "Quit smoking — non-negotiable, and required before septum surgery.",
  "Protein every meal — protect muscle while the fat comes off.",
  "Never crash below ~1500 kcal — muscle loss, gallstones, rebound.",
- "Cap loss at ~1 kg/week — faster (especially on a GLP-1) raises gallstone + muscle-loss risk.",
+ "Cap loss at ~1 kg/week — faster raises gallstone + muscle-loss risk.",
  "Weigh the weekly trend (same conditions) — daily weight is noise.",
- "GLP-1 / any med — only via your doctor. Never touch psych meds yourself.",
+ "Any new med — only via your doctor. Never touch psych meds yourself.",
  "Treat the OSA if confirmed — untreated, it fights your BP, insulin, and recovery."
 ];
 
 const tracking=[
- {f:"Daily",d:"Apple Watch: steps, HR, sleep · food log"},
+ {f:"Daily",d:"Apple Watch: steps, HR, sleep · CGM glucose · food log"},
  {f:"Weekly",d:"Omron weigh-in + waist (Sun AM, fasted)"},
  {f:"Wk 8 + 16",d:"Bloods: HbA1c, insulin, lipids, LFT, ferritin, Vit-D"},
  {f:"Wk 16",d:"Repeat liver USG · body-comp · BP · fitness test"}
 ];
 
 const equipment=[
- ["✅","Home gym — barbell, bench, dumbbells, mat"],["✅","Apple Watch SE 2 · MEDITIVE scale · BP cuff"],
+ ["✅","Home gym — barbell, bench, dumbbells, mat"],["✅","Apple Watch (→ Series 11: SpO2 + sleep-apnea alerts + VO₂max) · MEDITIVE scale · BP cuff"],
  ["🛒","Omron Karada HBF-375 (hand-to-foot body comp)"],["✅","Skinfold caliper - body-fat % by sites (track trend)"],["🛒","Food-tracking app (calorie + protein)"],
- ["🛒","Kitchen scale"],["◻︎","CGM — optional, to see your insulin-resistance response to foods"],
+ ["🛒","Kitchen scale"],["✅","CGM — watching glucose responses (caught a reactive low after a late carb meal)"],
  ["◻︎","Apple Fitness+ — guided cardio/strength sessions"],["◻︎","Resistance bands + pull-up bar"]
 ];
 

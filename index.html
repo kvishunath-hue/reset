@@ -129,6 +129,36 @@ body{font-family:'JetBrains Mono',monospace;background:#0a0a0a;color:#e0e0e0;min
 </div>
 
 <div class="panel">
+  <div class="panel-title">Body measurements log · baseline 24 Jun 2026</div>
+  <div class="faint" style="margin-bottom:8px">Type each fortnight's numbers — they <b>save automatically</b> in this browser. Re-measure in the morning, relaxed, end of exhale. <b>Targets:</b> waist &lt;40 → 35 in · WHR &lt;0.90 · keep the limbs steady/growing while waist drops.</div>
+  <div style="overflow-x:auto">
+  <table class="mlog" id="mlogTable">
+    <tr><th>Metric</th><th>Base</th><th>W2</th><th>W4</th><th>W6</th><th>W8</th><th>W10</th><th>W12</th><th>W14</th><th>W16</th></tr>
+  </table>
+  </div>
+  <style>
+    table.mlog{width:100%;border-collapse:collapse;font-size:11px}
+    table.mlog th,table.mlog td{border:1px solid #222;padding:3px 4px;text-align:center;white-space:nowrap}
+    table.mlog th{color:#1abc9c;font-size:10px}
+    table.mlog td.m{text-align:left;color:#ddd}
+    table.mlog td.b{color:#8a8a8a;font-weight:700}
+    table.mlog input{width:44px;background:#0e0e10;border:1px solid #2a2a2e;color:#e8e8e8;font:inherit;font-size:11px;text-align:center;border-radius:4px;padding:2px}
+    table.mlog input:focus{border-color:#1abc9c;outline:none}
+  </style>
+  <script>(function(){
+    var rows=[['wt','Weight (kg)','101.7'],['waist','Waist (in)','43.6'],['hips','Hips (in)','42'],['whr','WHR','1.04'],['neck','Neck (in)','15.5'],['chest','Chest (in)','41.5'],['arm','Arm flex (in)','14.3'],['fore','Forearm (in)','11.5'],['thigh','Thigh (in)','28.3'],['calf','Calf (in)','16'],['bf','Body fat (%)','31.3'],['vf','Visceral (lvl)','17']];
+    var cols=['w2','w4','w6','w8','w10','w12','w14','w16'];
+    var t=document.getElementById('mlogTable');
+    rows.forEach(function(r){
+      var tr=document.createElement('tr');
+      tr.innerHTML='<td class="m">'+r[1]+'</td><td class="b">'+r[2]+'</td>'+cols.map(function(c){var id='ml_'+r[0]+'_'+c;var v=localStorage.getItem(id)||'';return '<td><input class="mlog-in" id="'+id+'" value="'+v+'" inputmode="decimal"></td>';}).join('');
+      t.appendChild(tr);
+    });
+    t.querySelectorAll('input.mlog-in').forEach(function(i){i.addEventListener('input',function(){localStorage.setItem(i.id,i.value);});});
+  })();</script>
+</div>
+
+<div class="panel">
   <div class="panel-title">Projected timeline</div>
   <div class="progress-bar" id="progressBar"></div>
 </div>
